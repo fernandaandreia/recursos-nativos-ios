@@ -33,7 +33,7 @@ class ImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigationContro
     
     func menuDeOpcoes(completion:@escaping(_ opcao:MenuOpcoes) -> Void) -> UIAlertController {
         let menu = UIAlertController(title: "Atenção", message: "escolha uma das opções abaixo", preferredStyle: .actionSheet)
-        let camera = UIAlertAction(title: "tirar foto", style: .default) { (acao) in
+        let camera = UIAlertAction(title: "Tirar foto", style: .default) { (acao) in
             completion(.camera)
         }
         menu.addAction(camera)
