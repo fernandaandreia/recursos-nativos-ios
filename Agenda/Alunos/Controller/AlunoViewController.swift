@@ -75,11 +75,19 @@ class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
     
     @IBAction func buttonFoto(_ sender: UIButton) {
         
-        let menu = ImagePicker().menuDeOpcoes { (opcao) in
-            self.mostrarMultimidia(opcao)
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let multimidia = UIImagePickerController()
+                multimidia.sourceType = .camera
+            multimidia.delegate = imagePicker
+            self.present(multimidia, animated: true, completion: nil)
         }
-        present(menu, animated: true, completion: nil)
-    }
+       
+  
+//        let menu = ImagePicker().menuDeOpcoes { (opcao) in
+//            self.mostrarMultimidia(opcao) - Código original
+        }
+//        present(menu, animated: true, completion: nil)
+//    }
     
     @IBAction func stepperNota(_ sender: UIStepper) {
         self.textFieldNota.text = "\(sender.value)"
