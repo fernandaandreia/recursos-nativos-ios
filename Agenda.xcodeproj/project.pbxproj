@@ -22,6 +22,7 @@
 		AB992F9925A4BB3800D26DC0 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992F9825A4BB3800D26DC0 /* MapaViewController.swift */; };
 		AB992F9E25A4DB8E00D26DC0 /* CalculaMediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992F9D25A4DB8E00D26DC0 /* CalculaMediaAPI.swift */; };
 		AB992FA325A4EBB500D26DC0 /* Notificacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992FA225A4EBB500D26DC0 /* Notificacoes.swift */; };
+		AB992FA625A501BD00D26DC0 /* AutenticacaoLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992FA525A501BD00D26DC0 /* AutenticacaoLocal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		AB992F9825A4BB3800D26DC0 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		AB992F9D25A4DB8E00D26DC0 /* CalculaMediaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaMediaAPI.swift; sourceTree = "<group>"; };
 		AB992FA225A4EBB500D26DC0 /* Notificacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificacoes.swift; sourceTree = "<group>"; };
+		AB992FA525A501BD00D26DC0 /* AutenticacaoLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoLocal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				AB992F8E25A4A21800D26DC0 /* Mensagem.swift */,
 				AB992F9125A4B0BD00D26DC0 /* Localizacao.swift */,
 				AB992FA225A4EBB500D26DC0 /* Notificacoes.swift */,
+				AB992FA525A501BD00D26DC0 /* AutenticacaoLocal.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				AB992F9925A4BB3800D26DC0 /* MapaViewController.swift in Sources */,
 				03AA174E1FC84154003CB2B8 /* AppDelegate.swift in Sources */,
 				AB992F9225A4B0BD00D26DC0 /* Localizacao.swift in Sources */,
+				AB992FA625A501BD00D26DC0 /* AutenticacaoLocal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
