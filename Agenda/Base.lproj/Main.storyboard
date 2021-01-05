@@ -40,6 +40,7 @@
                                 <connections>
                                     <outlet property="imageAluno" destination="I1a-iL-YQH" id="dM3-yt-b69"/>
                                     <outlet property="labelNomeDoAluno" destination="oKL-i4-VS5" id="GFr-bb-rep"/>
+                                    <segue destination="ZY7-NM-Hup" kind="showDetail" identifier="editar" trigger="accessoryAction" id="bfg-KB-7H2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -70,11 +71,11 @@
             <objects>
                 <viewController id="ZY7-NM-Hup" customClass="AlunoViewController" customModule="Agenda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="daU-O4-U0H">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjd-vi-ppJ">
-                                <rect key="frame" x="16" y="96" width="343" height="571"/>
+                                <rect key="frame" x="16" y="0.0" width="343" height="647"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ys-tw-Qw2">
                                         <rect key="frame" x="109" y="20" width="125" height="125"/>
@@ -231,6 +232,7 @@
                             <constraint firstItem="kjd-vi-ppJ" firstAttribute="leading" secondItem="nVT-S7-kWk" secondAttribute="leading" constant="16" id="tnp-nO-LJA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="RAg-WL-O2x"/>
                     <connections>
                         <outlet property="buttonFoto" destination="X6G-KS-zIE" id="TSZ-IB-8Ah"/>
                         <outlet property="imageAluno" destination="EeF-Ef-j6E" id="0lP-oI-Din"/>
@@ -264,4 +266,7 @@
             <point key="canvasLocation" x="-519" y="116"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bfg-KB-7H2"/>
+    </inferredMetricsTieBreakers>
 </document>
