@@ -271,6 +271,9 @@
                             <constraint firstItem="Tbo-w6-F4Q" firstAttribute="bottom" secondItem="Vb0-Zt-iOF" secondAttribute="bottom" id="y7x-do-RXF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapa" destination="Tbo-w6-F4Q" id="jm5-2R-RXp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BUi-o1-lnw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
