@@ -47,11 +47,15 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFet
         self.navigationItem.searchController = searchController
     }
     
-    func recuperaAluno(){
+    func recuperaAluno(filtro:String = ""){
         
         let pesquisaAluno:NSFetchRequest<Aluno> = Aluno.fetchRequest()
         let ordenaPorNome = NSSortDescriptor(key: "nome", ascending: true)
         pesquisaAluno.sortDescriptors = [ordenaPorNome]
+        
+        if verificaFiltro(filtro){
+            pesquisaAluno.predicate = filtraAluno(filtro)
+        }
         
         gerenciadorDeResultados = NSFetchedResultsController(fetchRequest: pesquisaAluno, managedObjectContext: contexto, sectionNameKeyPath: nil, cacheName: nil)
         gerenciadorDeResultados?.delegate = self
@@ -61,6 +65,18 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFet
         } catch {
             print(error.localizedDescription)
         }
+    }
+    
+    func filtraAluno(_ filtro:String) -> NSPredicate {
+        return NSPredicate(format: "nome CONTAINS %@", filtro)
+        
+    }
+    
+    func verificaFiltro(_ filtro:String) -> Bool {
+        if filtro.isEmpty{
+            return false
+        }
+        return true
     }
     
     @objc func abrirActionSheet(_ longPress: UILongPressGestureRecognizer){
@@ -178,4 +194,20 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFet
         }
     
 }
+    // MARK: SearchBarDelegate
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let nomeDoAluno = searchBar.text else { return }
+        recuperaAluno(filtro: nomeDoAluno)
+        tableView.reloadData()
+        
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        recuperaAluno()
+        tableView.reloadData()
+    }
+    
+
+    
+    
 }
