@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -249,6 +250,32 @@
             </objects>
             <point key="canvasLocation" x="1189.5999999999999" y="115.59220389805098"/>
         </scene>
+        <!--Mapa View Controller-->
+        <scene sceneID="uib-op-gtp">
+            <objects>
+                <viewController storyboardIdentifier="mapa" id="Sve-SM-eom" customClass="MapaViewController" customModule="Agenda" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Uy-XC-NQl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tbo-w6-F4Q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vb0-Zt-iOF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tbo-w6-F4Q" firstAttribute="top" secondItem="Vb0-Zt-iOF" secondAttribute="top" id="M03-5j-m7Q"/>
+                            <constraint firstItem="Tbo-w6-F4Q" firstAttribute="trailing" secondItem="Vb0-Zt-iOF" secondAttribute="trailing" id="ddi-ff-Lvp"/>
+                            <constraint firstItem="Tbo-w6-F4Q" firstAttribute="leading" secondItem="Vb0-Zt-iOF" secondAttribute="leading" id="uC9-LE-fyK"/>
+                            <constraint firstItem="Tbo-w6-F4Q" firstAttribute="bottom" secondItem="Vb0-Zt-iOF" secondAttribute="bottom" id="y7x-do-RXF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BUi-o1-lnw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1848.8" y="115.59220389805098"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="yXs-rW-FGy">
             <objects>
@@ -269,4 +296,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="bfg-KB-7H2"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
