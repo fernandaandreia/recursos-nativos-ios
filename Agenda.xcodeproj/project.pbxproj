@@ -23,6 +23,8 @@
 		AB992F9E25A4DB8E00D26DC0 /* CalculaMediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992F9D25A4DB8E00D26DC0 /* CalculaMediaAPI.swift */; };
 		AB992FA325A4EBB500D26DC0 /* Notificacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992FA225A4EBB500D26DC0 /* Notificacoes.swift */; };
 		AB992FA625A501BD00D26DC0 /* AutenticacaoLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB992FA525A501BD00D26DC0 /* AutenticacaoLocal.swift */; };
+		ABBBD70725A5E130001BF42F /* Pino.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBBD70625A5E130001BF42F /* Pino.swift */; };
+		ABBBD70B25A5E4BD001BF42F /* icon_caelum.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBBD70A25A5E4BD001BF42F /* icon_caelum.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		AB992F9D25A4DB8E00D26DC0 /* CalculaMediaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaMediaAPI.swift; sourceTree = "<group>"; };
 		AB992FA225A4EBB500D26DC0 /* Notificacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificacoes.swift; sourceTree = "<group>"; };
 		AB992FA525A501BD00D26DC0 /* AutenticacaoLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoLocal.swift; sourceTree = "<group>"; };
+		ABBBD70625A5E130001BF42F /* Pino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pino.swift; sourceTree = "<group>"; };
+		ABBBD70A25A5E4BD001BF42F /* icon_caelum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_caelum.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 				AB992F9525A4BAE900D26DC0 /* Mapa */,
 				A28100181FD5C2E300E1BDF1 /* Componentes */,
 				03AA17511FC84154003CB2B8 /* Main.storyboard */,
+				ABBBD70925A5E4BD001BF42F /* Assets */,
 				03AA17571FC84154003CB2B8 /* Assets.xcassets */,
 				03AA17591FC84154003CB2B8 /* LaunchScreen.storyboard */,
 				03AA175C1FC84154003CB2B8 /* Info.plist */,
@@ -148,6 +153,7 @@
 		AB992F9525A4BAE900D26DC0 /* Mapa */ = {
 			isa = PBXGroup;
 			children = (
+				ABBBD70525A5E116001BF42F /* Model */,
 				AB992F9625A4BB0C00D26DC0 /* Controller */,
 			);
 			path = Mapa;
@@ -167,6 +173,22 @@
 				AB992F9D25A4DB8E00D26DC0 /* CalculaMediaAPI.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		ABBBD70525A5E116001BF42F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABBBD70625A5E130001BF42F /* Pino.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABBBD70925A5E4BD001BF42F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ABBBD70A25A5E4BD001BF42F /* icon_caelum.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03AA175B1FC84154003CB2B8 /* LaunchScreen.storyboard in Resources */,
+				ABBBD70B25A5E4BD001BF42F /* icon_caelum.png in Resources */,
 				03AA17581FC84154003CB2B8 /* Assets.xcassets in Resources */,
 				03AA17531FC84154003CB2B8 /* Main.storyboard in Resources */,
 			);
@@ -242,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */,
+				ABBBD70725A5E130001BF42F /* Pino.swift in Sources */,
 				03AA17661FC84353003CB2B8 /* HomeTableViewController.swift in Sources */,
 				03AA17561FC84154003CB2B8 /* Agenda.xcdatamodeld in Sources */,
 				A281001A1FD5C2F700E1BDF1 /* ImagePicker.swift in Sources */,
