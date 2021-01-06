@@ -4,6 +4,19 @@
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Este aplicativo precisa utilizar a sua localizacao</string>
+	<key>UIApplicationShorcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconTypeCompose</key>
+			<string>UIApplicationShortcutIconTypeCompose</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Cadastrar Aluno</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>CadastrarAluno</string>
+		</dict>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>NSCameraUsageDescription</key>
