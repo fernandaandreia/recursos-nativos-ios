@@ -58,7 +58,11 @@
                                     <action selector="buttonCalcularMedia:" destination="Qhi-kM-lyB" id="xrP-7k-Qpx"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="search" id="eTQ-eO-deP"/>
+                            <barButtonItem systemItem="search" id="eTQ-eO-deP">
+                                <connections>
+                                    <action selector="buttonLocalizacaoGeral:" destination="Qhi-kM-lyB" id="Kv2-xH-4Vr"/>
+                                </connections>
+                            </barButtonItem>
                         </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4cp-jd-Mnv">
                             <connections>
