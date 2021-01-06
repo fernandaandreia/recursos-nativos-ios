@@ -112,6 +112,24 @@ class HomeTableViewController: UITableViewController, UISearchBarDelegate, NSFet
                     mapa.aluno = alunoSelecionado
                     self.navigationController?.pushViewController(mapa, animated: true)
                     break
+                case .abrirPaginaWeb:
+                    
+                    if let urlDoAluno = alunoSelecionado.site {
+                        
+                        var urlFormatada = urlDoAluno
+                        
+                        if !urlFormatada.hasPrefix("http://"){
+                            urlFormatada = String(format: "http://%@", urlFormatada)
+                        }
+                        
+                       guard let url = URL(string: urlFormatada) else { return }
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                        
+                    }
+                    
+                    break
+                default:
+                    break
                 }
             })
             self.present(menu, animated: true, completion: nil)
